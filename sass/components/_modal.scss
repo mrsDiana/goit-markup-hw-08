@@ -1,0 +1,172 @@
+.backdrop {
+    @include functionthree(opacity, visibility, transform);
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    opacity: 1;
+    visibility: visible;
+    
+    background-color: $backdrop;
+}
+
+.backdrop--is-hidden {
+    transform: rotateZ(0.5turn);
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal {
+    @include function(transform);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    
+    padding: 40px;
+
+    background-color: $white;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.modal__close {
+    @include function(fill);
+    position: absolute;
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    top: 8px;
+    right: 8px;   
+
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+
+    &:focus,
+    &:hover,
+    &:active {
+        fill: $accentColor;
+    }
+}
+
+.modal__txt {
+    display: block;
+    color: $headerColor;
+    font-size: $largeSize;
+    line-height: 1.15;
+    text-align: center;
+    margin-bottom: 12px;
+
+}
+
+.modal__form {
+    display: flex;
+    flex-direction: column;
+
+
+    font-size: $tinySize;
+    line-height: 1.17;
+    letter-spacing: $tinySpacing;
+}
+
+.data {
+    margin-bottom: 10px;
+}
+
+.input {
+    @include function(fill);
+    position: relative;
+    display: block;
+    cursor: pointer;
+    margin-top: 4px;
+
+    &:focus-within {
+        fill: $accentColor;
+    }
+}
+
+.input__icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translate(0, -50%);
+}
+
+.input__area {
+    @extend %border-input;
+    @include function(border-color);
+
+    height: 40px;
+    padding: 12px 0 12px 42px;
+    
+    &:focus {
+        border-color: $accentColor;
+    }
+}
+
+.textaria {
+    @extend %border-input;
+    @include functionthree(border-color, font-size, line-height);
+
+    margin-top: 4px;
+
+    height: 120px;
+    padding: 12px 16px;
+    resize: none;
+
+    &:focus {
+        border-color: $accentColor;
+        font-size: $smallSize;
+        line-height: 1.14;
+    }
+}
+
+.policy {
+    @extend %flex;
+
+    margin: 20px auto 30px auto;
+    font-size: $smallSize;
+    line-height: 1.71;
+
+    &__txt {
+        margin-left: 7px;
+    }
+
+    &__link {
+        color: $accentColor;
+    }
+}
+
+.policy__icon {
+    @include functiontwo(background-image, background-color);
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border: 2px solid $headerColor;
+    border-radius: 2px;
+
+    .hidden:checked+& {
+        background-image: url(/images/icon-check.svg);
+        background-color: $accentColor;
+        background-size: contain;
+        background-origin: border-box;
+        border-color: transparent;
+    }
+}
+
+.button--shadow {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}

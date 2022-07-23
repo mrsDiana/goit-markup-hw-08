@@ -1,0 +1,30 @@
+.klients__list {
+    display: flex;
+    justify-content: center;
+}
+
+.klients__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.label {
+    @include functiontwo(border, fill);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid $socialColor;
+    border-radius: 4px;
+    fill: $socialColor;
+    cursor: pointer;
+
+    &:active,
+    &:hover,
+    &:focus {
+        border: 1px solid $accentColor;
+        fill: $accentColor;
+    }
+}
+

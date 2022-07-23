@@ -1,0 +1,52 @@
+%link:hover,
+%link:focus,
+%link:active {
+    color: $accentColor;
+}
+
+
+%flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+%button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    width: 200px;
+    height: 50px;
+    padding: 0;
+    border: 2px transparent;
+    border-radius: 4px;
+    
+    text-align: center;
+    color: $white;
+    background-color: $accentColor;
+    font-weight: $boldFont;
+    font-size: $mediumSize;
+    line-height: 1.88;
+    letter-spacing: $bigSpacing;
+    cursor: pointer;
+    
+    &:active,
+    &:hover,
+    &:focus {
+    background-color: $hoverColor;
+    }
+}
+
+%border-input {
+    display: block;
+    width: 100%;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: transparent;
+    cursor: pointer;
+}

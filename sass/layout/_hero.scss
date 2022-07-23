@@ -1,0 +1,14 @@
+.hero {
+    line-height: 1.36;
+    letter-spacing: $bigSpacing;
+    background-color: $bgColor;
+    background-image: linear-gradient($gradColor, $gradColor), url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 1600px;
+    margin: 0 auto;
+
+    &__container {
+        padding: 200px 0;
+    }
+}

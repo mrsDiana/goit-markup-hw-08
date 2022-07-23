@@ -1,0 +1,35 @@
+@import "./base/normolize";
+@import "./base/fonts";
+
+@import "./utils/variables";
+@import "./base/reset";
+
+
+@import "./base/common";
+
+
+@import "./base/hidden";
+@import "./utils/extend";
+@import "./utils/mixin";
+
+
+@import "./layout/header";
+@import "./components/header";
+
+
+@import "./layout/hero";
+@import "./components/hero";
+
+@import "./layout/section";
+@import "./components/first-section";
+
+@import "./components/second-section";
+
+@import "./components/team-section";
+
+@import "./components/klients";
+
+@import "./layout/footer";
+@import "./components/footer";
+
+@import "./components/portfolio";

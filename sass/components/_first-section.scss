@@ -1,0 +1,29 @@
+.characteristic__list {
+    @extend %flex;
+}
+
+.benefits {
+    @extend %flex;
+    width: 270px;
+
+    &:not(:nth-child(n+4)) {
+        margin-right: 30px;
+    }
+
+    &__icon {
+        @extend %flex;
+        justify-content: center;
+        background-color: $greyColor;
+        width: 270px;
+        height: 120px;
+        margin-bottom: 30px;
+    }
+
+    &__title {
+        margin-bottom: 10px;
+        color: $headerColor;
+        font-size: $smallSize;
+        line-height: 1.14;
+        text-transform: uppercase;
+    }
+}

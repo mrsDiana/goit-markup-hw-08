@@ -1,0 +1,74 @@
+.header__container,
+.nav,
+.navigation,
+.contact__link {
+    @extend%flex;
+}
+
+@import "./logo";
+
+.logo__txt--black {
+    @include logo($black);
+}
+
+.pages:not(:last-child),
+.contact:not(:last-child) {
+    margin-right: 50px;
+}
+
+.navigation {
+    margin-left: 93px;
+}
+
+.pages__link {
+    padding: 32px 0;
+
+    color: $headerColor;
+
+    font-weight: $mediumFont;
+    font-size: $smallSize;
+    line-height: 0.88;
+    letter-spacing: $smallSpacing;
+
+    @extend%link;
+}
+
+.info {
+    @extend%flex;
+    margin-left: auto;
+}
+
+.contact__link {
+    padding: 20px 0;
+
+    font-weight: $mediumFont;
+    font-size: $smallSize;
+    line-height: 1.14;
+    letter-spacing: $smallSpacing;
+    color: $mainColor;
+
+    @extend%link;
+}
+
+.contact__icon {
+    margin-right: 10px;
+
+    fill: currentColor;
+}
+
+.pages__link--curent {
+    color: $accentColor;
+    position: relative;
+
+    &::after {
+            content: '';
+            height: 4px;
+            background: $accentColor;
+            border-radius: 2px;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            position: absolute;
+            transform: translate(0, -3px);
+        }
+}
