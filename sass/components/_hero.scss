@@ -5,12 +5,17 @@
             margin: auto;
             margin-bottom: 30px;
             font-weight: $blackFont;
-            font-size: $sloganSize;
-            width: 696px;
+            font-size: $logoSize;
             color: $white;
             letter-spacing: $bigSpacing;
-            line-height: 1.36;
+            line-height: 1.62;
             text-transform: uppercase;
+
+            @media screen and (min-width: 1600px) {
+            font-size: $sloganSize;
+            line-height: 1.36;
+                
+            }
         }
 }
 

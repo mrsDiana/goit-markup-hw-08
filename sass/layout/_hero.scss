@@ -1,53 +1,54 @@
 .hero {
-    line-height: 1.36;
     letter-spacing: $bigSpacing;
     background-color: $bgColor;
     background-image: linear-gradient($gradColor, $gradColor), url(../images/hero-480.jpg);
     background-size: 480px 400px;
     background-repeat: no-repeat;
     background-position: center;
-    max-width: 1600px;
-    margin: 0 auto;        
+    max-width: 480px;
+    margin: 0 auto;
+    
+    @media screen {
+        
+    }
 
     &__container {
-        padding: 200px 0;
-    }
-}
+        padding: 118px 0;
 
- @media screen and (min-device-pixel-ratio: 2),
+        @media screen and (min-width: 1600px) {
+            padding: 200px 0;
+        }
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
  screen and (min-resolution: 192dpi),
  screen and (min-resolution: 2dppx) {
-     .hero {
          background-image: url(../images/hero-960.jpg);
-     }
  }
 
- @media screen and (min-width: 768px) {
-    .hero {
-        background-image: linear-gradient($gradColor, $gradColor), url(../images/hero-768.jpg);
-        background-size: 768px 400px; }   
- }
+    @media screen and (min-width: 768px) {
+      background-image: linear-gradient($gradColor, $gradColor), url(../images/hero-768.jpg);
+      background-size: 768px 400px;
+  }
 
- @media 
- screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
- screen and (min-resolution: 192dpi) and (min-width: 768px),
- screen and (min-resolution: 2dppx) and (min-width: 768px) {
-     .hero {
-         background-image: url(../images/hero-1536.jpg);
-     }
- }
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+      background-image: url(../images/hero-1536.jpg);
+  }
 
-@media screen and (min-width: 1600px) {
-    .hero {
-        background-image: linear-gradient($gradColor, $gradColor), url(../images/hero-1600.jpg);
-        background-size: 1600px 600px;
-    }
+    @media screen and (min-width: 1600px) {
+      background-image: linear-gradient($gradColor, $gradColor), url(../images/hero-1600.jpg);
+      background-size: 1600px 600px;
+  }
+
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 1600px),
+  screen and (min-resolution: 192dpi) and (min-width: 1600px),
+  screen and (min-resolution: 2dppx) and (min-width: 1600px) {
+      background-image: url(../images/hero-3200.jpg);
+  }
 }
-    
- @media screen and (min-device-pixel-ratio: 2) and (min-width: 1600px),
-screen and (min-resolution: 192dpi) and (min-width: 1600px),
-screen and (min-resolution: 2dppx) and (min-width: 1600px) {
-    .hero {
-        background-image: url(../images/hero-3200.jpg);
-    }
-}
+
+ 
+
+
