@@ -171,15 +171,45 @@
           <h2 class="title">Чем мы занимаемся</h2>
           <ul class="work__list">
             <li class="thing">
-              <img src="./images/box_1.jpg" alt="Поиск решения" width="370" />
+              <picture>
+                <source
+                  srcset="./images/box_1-370.webp 370w, ./images/box_1-740.webp 740w"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/box_1-370.jpg 370w, ./images/box_1-740.jpg 740w"
+                  type="image/jpeg"
+                />
+                <img src="./images/box_1-370.jpg" alt="Поиск решения" width="370" />
+              </picture>
               <p class="thing__desc">Десктопные приложения</p>
             </li>
             <li class="thing">
-              <img src="./images/box_2.jpg" alt="Планирование" width="370" />
+              <picture>
+                <source
+                  srcset="./images/box_2-370.webp 370w, ./images/box_2-740.webp 740w"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/box_2-370.jpg 370w, ./images/box_2-740.jpg 740w"
+                  type="image/jpeg"
+                />
+                <img src="./images/box_2-370.jpg" alt="Поиск решения" width="370" />
+              </picture>
               <p class="thing__desc">Мобильные приложения</p>
             </li>
             <li class="thing">
-              <img src="./images/box_3.jpg" alt="Реализация проекта" width="370" />
+              <picture>
+                <source
+                  srcset="./images/box_3-370.webp 370w, ./images/box_3-740.webp 740w"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/box_3-370.jpg 370w, ./images/box_3-740.jpg 740w"
+                  type="image/jpeg"
+                />
+                <img src="./images/box_3-370.jpg" alt="Поиск решения" width="370" />
+              </picture>
               <p class="thing__desc">Дизайнерские решения</p>
             </li>
           </ul>
@@ -191,7 +221,33 @@
           <h2 class="title">Наша команда</h2>
           <ul class="team__list">
             <li class="person">
-              <img src="./images/img.jpg" alt="Фото Игоря Демьяненко" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team_card_1-270.webp 270w,
+                    ./images/team_card_1-354.webp 354w,
+                    ./images/team_card_1-450.webp 450w,
+                    ./images/team_card_1-540.webp 540w,
+                    ./images/team_card_1-708.webp 708w,
+                    ./images/team_card_1-900.webp 900w
+                  "
+                  type="image/webp"
+                  sizes="(min-width: 1600px) 25vw, (min-width: 768px) 50vw, 100vw"
+                />
+                <source
+                  srcset="
+                    ./images/team_card_1-270.jpg 270w,
+                    ./images/team_card_1-354.jpg 354w,
+                    ./images/team_card_1-450.jpg 450w,
+                    ./images/team_card_1-540.jpg 540w,
+                    ./images/team_card_1-708.jpg 708w,
+                    ./images/team_card_1-900.jpg 900w
+                  "
+                  type="image/jpeg"
+                  sizes="(min-width: 1600px) 25vw, (min-width: 768px) 50vw, 100vw"
+                />
+                <img src="./images/team_card_1-270.jpg" alt="Фото Игоря Демьяненко" />
+              </picture>
               <h3 class="person__name">Игорь Демьяненко</h3>
               <p class="person__position" lang="en">Product Designer</p>
               <ul class="massenger">
@@ -223,7 +279,33 @@
             </li>
 
             <li class="person">
-              <img src="./images/img-1.jpg" alt="Фото Ольги Репиной" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team_card_2-270.webp 270w,
+                    ./images/team_card_2-354.webp 354w,
+                    ./images/team_card_2-450.webp 450w,
+                    ./images/team_card_2-540.webp 540w,
+                    ./images/team_card_2-708.webp 708w,
+                    ./images/team_card_2-900.webp 900w
+                  "
+                  type="image/webp"
+                  sizes="(min-width: 1600px) 25vw, (min-width: 768px) 50vw, 100vw"
+                />
+                <source
+                  srcset="
+                    ./images/team_card_2-270.jpg 270w,
+                    ./images/team_card_2-354.jpg 354w,
+                    ./images/team_card_2-450.jpg 450w,
+                    ./images/team_card_2-540.jpg 540w,
+                    ./images/team_card_2-708.jpg 708w,
+                    ./images/team_card_2-900.jpg 900w
+                  "
+                  type="image/jpeg"
+                  sizes="(min-width: 1600px) 25vw, (min-width: 768px) 50vw, 100vw"
+                />
+                <img src="./images/team_card_2-270.jpg" alt="Фото Ольги Репиной" />
+              </picture>
               <h3 class="person__name">Ольга Репина</h3>
               <p class="person__position" lang="en">Frontend Developer</p>
               <ul class="massenger">
@@ -255,7 +337,33 @@
             </li>
 
             <li class="person">
-              <img src="./images/img-2.jpg" alt="Фото Николая Тарасова" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team_card_3-270.webp 270w,
+                    ./images/team_card_3-354.webp 354w,
+                    ./images/team_card_3-450.webp 450w,
+                    ./images/team_card_3-540.webp 540w,
+                    ./images/team_card_3-708.webp 708w,
+                    ./images/team_card_3-900.webp 900w
+                  "
+                  type="image/webp"
+                  sizes="(min-width: 1600px) 25vw, (min-width: 768px) 50vw, 100vw"
+                />
+                <source
+                  srcset="
+                    ./images/team_card_3-270.jpg 270w,
+                    ./images/team_card_3-354.jpg 354w,
+                    ./images/team_card_3-450.jpg 450w,
+                    ./images/team_card_3-540.jpg 540w,
+                    ./images/team_card_3-708.jpg 708w,
+                    ./images/team_card_3-900.jpg 900w
+                  "
+                  type="image/jpeg"
+                  sizes="(min-width: 1600px) 25vw, (min-width: 768px) 50vw, 100vw"
+                />
+                <img src="./images/team_card_3-270.jpg" alt="Фото Николая Тарасова" />
+              </picture>
               <h3 class="person__name">Николай Тарасов</h3>
               <p class="person__position" lang="en">Marketing</p>
               <ul class="massenger">
@@ -287,7 +395,33 @@
             </li>
 
             <li class="person">
-              <img src="./images/img-3.jpg" alt="Фото Михаила Ермакова" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team_card_4-270.webp 270w,
+                    ./images/team_card_4-354.webp 354w,
+                    ./images/team_card_4-450.webp 450w,
+                    ./images/team_card_4-540.webp 540w,
+                    ./images/team_card_4-708.webp 708w,
+                    ./images/team_card_4-900.webp 900w
+                  "
+                  type="image/webp"
+                  sizes="(min-width: 1600px) 25vw, (min-width: 768px) 50vw, 100vw"
+                />
+                <source
+                  srcset="
+                    ./images/team_card_4-270.jpg 270w,
+                    ./images/team_card_4-354.jpg 354w,
+                    ./images/team_card_4-450.jpg 450w,
+                    ./images/team_card_4-540.jpg 540w,
+                    ./images/team_card_4-708.jpg 708w,
+                    ./images/team_card_4-900.jpg 900w
+                  "
+                  type="image/jpeg"
+                  sizes="(min-width: 1600px) 25vw, (min-width: 768px) 50vw, 100vw"
+                />
+                <img src="./images/team_card_4-270.jpg" alt="Фото Михаила Ермакова" />
+              </picture>
               <h3 class="person__name">Михаил Ермаков</h3>
               <p class="person__position" lang="en">UI Designer</p>
               <ul class="massenger">
