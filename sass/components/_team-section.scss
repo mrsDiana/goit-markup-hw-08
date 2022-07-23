@@ -2,7 +2,7 @@
     background-color: $greyColor;
 }
 
-.team__list,
+// .team__list,
 .massenger {
     @extend %flex;
     justify-content: center;
@@ -10,13 +10,14 @@
 
 .person {
     padding-bottom: 30px;
+    margin: 0 auto 0;
 
-    width: 270px;
+    min-width: 270px;
     background-color: $white;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    &:not(:nth-child(n+4)) {
-        margin-right: 30px;
+    &:not(:last-child) {
+        margin-bottom: 30px;
     }
 
     &__name {

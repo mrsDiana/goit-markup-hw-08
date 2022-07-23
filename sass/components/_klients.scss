@@ -1,10 +1,8 @@
 .klients__list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-}
-
-.klients__item:not(:last-child) {
-    margin-right: 30px;
+    gap: 30px;
 }
 
 .label {

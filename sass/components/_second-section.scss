@@ -4,6 +4,10 @@
     &__list {
         @extend %flex;
     }
+
+    @media screen and (max-width: 1599px) {
+        display: none;       
+    }
 }
 
 .thing {

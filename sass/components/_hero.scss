@@ -10,10 +10,11 @@
             letter-spacing: $bigSpacing;
             line-height: 1.62;
             text-transform: uppercase;
-
+            width: 360px;
             @media screen and (min-width: 1600px) {
             font-size: $sloganSize;
             line-height: 1.36;
+            width: 696px;
                 
             }
         }

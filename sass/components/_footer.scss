@@ -1,6 +1,9 @@
 .information {
+@media screen and (min-width: 1600px) {
     margin-right: 70px;
+    }
 }
+
 
 @import "./logo";
 
@@ -9,11 +12,15 @@
 }
 
 .connection {
-    margin-top: 20px;
+    margin-top: 20px; 
 }
 
 .connection__item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+    @media screen and (min-width: 1600) {
+        margin-bottom: 9px;
+    }
+    
 }
 
 .communication {
@@ -29,6 +36,16 @@
         color: $accentColor;
     }
 }
+
+.join {
+ @media screen and (max-width: 1600px) {
+            margin: 60px 0;
+        }
+@media screen and (min-width: 768px) and (max-width: 1599px) {
+    margin:0 89px 0 165px;
+}
+ }
+
 
 .subtitle {
     margin-bottom: 20px;
@@ -48,20 +65,26 @@
 }
 
 .email {
-    margin-left: auto;
+    // margin-left: auto;
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    @media screen and (min-width: 768px) and (max-width: 1599px) {
+        margin: 60px auto 0 auto;
+        }
+    // align-items: flex-end;
 
     &__col {
         display: flex;
         flex-direction: column;
+        height: 120px;
+        justify-content: space-between;
     }
 
     &__input {
-        margin-right: 12px;
+        // margin-right: 12px;
         padding: 15px 16px;
     
-        width: 358px;
+        min-width: 358px;
         height: 50px;
         border: 1px solid rgba(255, 255, 255, 0.3);
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
