@@ -6,10 +6,17 @@ body {
     line-height: 1.71;
     letter-spacing: $mediumSpacing;
 
-    // &.modal-open {
-    //     overflow: hidden;
-    // }
+    &.modal-open {
+        overflow: hidden;
+    }
 }
+
+@media screen and (max-width: 767px) {
+    main {
+        margin-top: 61px;
+    }
+}
+
 
 .container {
     padding: 0 15px;

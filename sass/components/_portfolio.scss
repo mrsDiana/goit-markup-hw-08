@@ -1,7 +1,14 @@
 .control {
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    gap: 15px 8px;
+
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+        margin-bottom: 50px;
+    }
 
     &__btn {
         @include function(color);
@@ -34,26 +41,27 @@
 .grid {
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
 
-    &__item {
-        margin-right: 30px;
-        margin-bottom: 30px;
-        height: calc((100% - 60px) / 3);
-        width: 370px;
+&__item {
+    display: flex;
+    flex-basis: 100%;
+
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 30px) / 2);
     }
 
-    &__item:nth-last-of-type(-n+3) {
-        margin-bottom: 0;
+    @media screen and (min-width: 1600px) {
+        flex-basis: calc((100% - 60px) / 3);
     }
+}
 
-    &__item:nth-child(3n) {
-        margin-right: 0;
-    }
 }
 
 .card {
     @include function(box-shadow);
-    display: block;
+    display: flex;
+    flex-direction: column;
     color: currentColor;
     box-shadow: 0;
 
@@ -63,6 +71,7 @@
     }
 
     &__border {
+        flex-grow: 1;
         border-bottom: 1px solid $borderColor;
         border-right: 1px solid $borderColor;
         border-left: 1px solid $borderColor;

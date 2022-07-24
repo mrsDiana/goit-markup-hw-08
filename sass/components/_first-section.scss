@@ -1,10 +1,20 @@
 .characteristic__list {
-    // @extend %flex;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .benefits {
-    // @extend %flex;
-    min-width: 270px;
+    flex-basis: 100%;
+
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 30px) / 2);
+    }
+
+    @media screen and (min-width: 1600px) {
+        flex-basis: calc((100% - 90px) / 4);
+    }
+    
 
     &:not(:last-child) {
         margin: 0 auto 30px;
@@ -25,5 +35,9 @@
         line-height: 1.14;
         text-transform: uppercase;
         text-align: center;
+
+        @media screen and (min-width: 768px) {
+            text-align: start;
+        }
     }
 }

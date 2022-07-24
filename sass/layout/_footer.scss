@@ -7,11 +7,12 @@
             text-align: center;
         }
 
-        @media screen and (min-width: 768px) and (max-width: 1599px){
+        @media screen and (min-width: 768px) {
             display: flex;
             flex-wrap: wrap;
         }
-        // display: flex;
-        // align-items: baseline;
+
+        @media screen and (min-width: 1600px) {
+            align-items: baseline;}
     }
 }

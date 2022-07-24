@@ -26,14 +26,25 @@
     @media screen and (min-width: 768px) {
         display: none;
     }
+
+    &:focus,
+    &:hover,
+    &:active {
+        fill: $accentColor;
+    }
 }
 
 .menu-conteiner {
     display: none;
-    max-width: 480px;
+
+    @media screen and (max-width: 767px) {
+        max-width: 480px;        
+    }
+    
 
     @media screen and (min-width: 768px) {
             display: flex;
+            margin-left: auto;
         }
 
     &.is-open {
