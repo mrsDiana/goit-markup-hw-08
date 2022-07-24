@@ -13,7 +13,7 @@
 }
 
 .pages:not(:last-child),
-.contact:not(:last-child) {
+.contact:last-child {
     margin: 0 0 32px 0;
     // margin-right: 50px;
 }
@@ -27,50 +27,18 @@
     color: $headerColor;
 
     font-weight: $mediumFont;
+    font-size: $smallSize;
+    line-height: 0.88;
+    letter-spacing: $smallSpacing;
+    padding: 10px 0;
+
+    @extend%link;  
+    
+    .menu-conteiner.is-open & {
     font-size: 40px;
     line-height: 1.18;
-    letter-spacing: $smallSpacing;
-
-    @extend%link;
-
-    
-    
-    // padding: 32px 0;
-
-
-
-
-    // font-size: $smallSize;
-    // line-height: 0.88;
-
-}
-
-.info {
-    display: flex;
-    flex-direction: column-reverse;
-    // margin-left: auto;
-}
-
-.contact__link {
-    padding: 20px 0;
-
-    font-weight: $mediumFont;
-    font-size: $smallSize;
-    line-height: 1.14;
-    letter-spacing: $smallSpacing;
-    color: $mainColor;
-
-    @extend%link;
-}
-
-.contact__icon {
-    display: none;
-
-    @media screen and (min-width: 768px) {
-        display: block;
-        margin-right: 10px;
-        fill: currentColor;
     }
+
 }
 
 .pages__link--curent {
@@ -88,4 +56,70 @@
     //         position: absolute;
     //         transform: translate(0, -3px);
     //     }
+}
+
+.info {
+    display: flex;
+    margin-left: auto;
+    .menu-conteiner.is-open & {
+    flex-direction: column-reverse;
+    margin: auto 0 0 0;
+    }
+}
+
+.contact__link {
+    padding: 20px 0;
+
+    font-weight: $mediumFont;
+    font-size: $smallSize;
+    line-height: 1.14;
+    letter-spacing: $smallSpacing;
+    color: $mainColor;
+
+    @extend%link;
+
+    .menu-conteiner.is-open &{
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 1.18;
+        letter-spacing: 0.02em;
+    }
+}
+
+.menu-conteiner.is-open .contact__color{
+    color: $accentColor;
+}
+
+.contact__icon {
+    
+        display: block;
+        margin-right: 10px;
+        fill: currentColor;
+
+        .menu-conteiner.is-open &{
+        display: none;
+        }
+}
+
+.app {
+    display: none;
+
+    .menu-conteiner.is-open &{
+        display: flex;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;
+        letter-spacing: 0.02em;
+        
+        color: $accentColor;
+        margin-top: 64px;
+    }
+
+    .app__link:not(:last-child){
+        margin-right: 10px;
+        padding-right: 10px;
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
+
+
 }

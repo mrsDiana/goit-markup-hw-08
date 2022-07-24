@@ -22,11 +22,19 @@
     &.is-open .icon-menu {
         display: none;
     }
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
 }
 
 .menu-conteiner {
     display: none;
     max-width: 480px;
+
+    @media screen and (min-width: 768px) {
+            display: flex;
+        }
 
     &.is-open {
         position: absolute;
@@ -36,11 +44,11 @@
         display: flex;
         flex-direction: column;
 
-        height: 796px;
+        height: 100vh;
 
-        padding: 48px 0 48px 25px;
+        padding: 48px 25px;
 
-        width: 100%;
+        width: 100vw;
 
         background-color: $white;
     }
