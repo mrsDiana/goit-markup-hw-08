@@ -750,6 +750,7 @@ body.modal-open {
   height: 100%;
   opacity: 1;
   visibility: visible;
+  overflow: scroll;
   background-color: rgba(0, 0, 0, 0.2);
 }
 
