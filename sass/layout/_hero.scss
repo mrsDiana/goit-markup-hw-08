@@ -34,8 +34,8 @@
   }
 
     @media screen and (min-width: 1200px) {
-      background-image: linear-gradient($gradColor, $gradColor), url(../images/hero-1200.jpg);
-      background-size: 1200px 600px;
+      background-image: linear-gradient($gradColor, $gradColor), url(../images/hero-1600.jpg);
+      background-size: 1600px 600px;
   }
 
     @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),

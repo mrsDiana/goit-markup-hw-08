@@ -377,7 +377,7 @@ body.modal-open {
     width: 768px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
   }
@@ -387,7 +387,7 @@ body.modal-open {
   padding: 60px 0;
   margin: 0 auto 0;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .section {
     padding: 94px 0;
   }
@@ -564,7 +564,7 @@ body.modal-open {
       -ms-flex-align: center;
           align-items: center;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .info {
     margin-left: 305px;
     display: -webkit-box;
@@ -595,13 +595,13 @@ body.modal-open {
   letter-spacing: 0.02em;
   color: #757575;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .contact__link {
     line-height: 1.17;
     font-size: 14px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (max-width: 767px) {
   .menu-conteiner.is-open .contact__link {
     font-weight: 500;
     font-size: 34px;
@@ -613,7 +613,7 @@ body.modal-open {
 .contact:not(:last-child) {
   margin: 0 0 10px 0;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .contact:not(:last-child) {
     margin: 0 30px 0 0;
   }
@@ -634,7 +634,7 @@ body.modal-open {
   width: 14px;
   height: 10px;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .contact__icon--mail {
     width: 16px;
     height: 12px;
@@ -644,13 +644,13 @@ body.modal-open {
   width: 10px;
   height: 14px;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .contact__icon--tel {
     width: 10px;
     height: 16px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .contact__icon {
     margin-right: 10px;
   }
@@ -694,7 +694,7 @@ body.modal-open {
 .hero__container {
   padding: 118px 0;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .hero__container {
     padding: 200px 0;
   }
@@ -716,14 +716,14 @@ body.modal-open {
     background-image: url(../images/hero-1536.jpg);
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-1600.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-1600.jpg);
     background-size: 1600px 600px;
   }
 }
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 1600px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1600px), screen and (min-resolution: 192dpi) and (min-width: 1600px), screen and (min-resolution: 2dppx) and (min-width: 1600px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero {
     background-image: url(../images/hero-3200.jpg);
   }
@@ -743,7 +743,7 @@ body.modal-open {
   text-transform: uppercase;
   width: 360px;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .slogan__title {
     font-size: 44px;
     line-height: 1.36;
@@ -800,7 +800,7 @@ body.modal-open {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1200px) {
   .modal {
     max-width: 450px;
     width: calc(100% - 30px);
@@ -935,7 +935,7 @@ body.modal-open {
 .policy__link {
   color: #2196F3;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .policy {
     font-size: 14px;
     line-height: 1.71;
@@ -975,7 +975,7 @@ body.modal-open {
   line-height: 1.18;
   text-align: center;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .title {
     margin-bottom: 50px;
     font-size: 36px;
@@ -1002,7 +1002,7 @@ body.modal-open {
         flex-basis: calc((100% - 30px) / 2);
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .benefits {
     -ms-flex-preferred-size: calc((100% - 90px) / 4);
         flex-basis: calc((100% - 90px) / 4);
@@ -1036,7 +1036,7 @@ body.modal-open {
 .work {
   padding-top: 0;
 }
-@media screen and (max-width: 1599px) {
+@media screen and (max-width: 1199px) {
   .work {
     display: none;
   }
@@ -1118,7 +1118,7 @@ body.modal-open {
         flex-basis: calc((100% - 30px) / 2);
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .person {
     -ms-flex-preferred-size: calc((100% - 90px) / 4);
         flex-basis: calc((100% - 90px) / 4);
@@ -1202,7 +1202,7 @@ body.modal-open {
   background-color: #2F303A;
   padding: 60px 0;
 }
-@media screen and (max-width: 1599px) {
+@media screen and (max-width: 1199px) {
   .footer__container {
     text-align: center;
   }
@@ -1216,7 +1216,7 @@ body.modal-open {
         flex-wrap: wrap;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .footer__container {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
@@ -1229,7 +1229,7 @@ body.modal-open {
     margin: 0 0 0 61px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .information {
     margin: 0 70px 0 0;
   }
@@ -1255,7 +1255,7 @@ body.modal-open {
 .connection__item:not(:last-child) {
   margin-bottom: 8px;
 }
-@media screen and (min-width: 1600) {
+@media screen and (min-width: 1200) {
   .connection__item:not(:last-child) {
     margin-bottom: 9px;
   }
@@ -1280,7 +1280,7 @@ body.modal-open {
     margin: 60px 0;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1599px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .join {
     margin: 0 0 0 165px;
   }
@@ -1329,12 +1329,12 @@ body.modal-open {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-@media screen and (min-width: 768px) and (max-width: 1599px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .email {
     margin: 60px auto 0 141px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .email {
     margin: 0 0 0 93px;
   }
@@ -1352,7 +1352,7 @@ body.modal-open {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .email__col {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1379,7 +1379,7 @@ body.modal-open {
     width: 450px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .email__input {
     width: 358px;
     margin-right: 12px;
@@ -1464,7 +1464,7 @@ body.modal-open {
         flex-basis: calc((100% - 30px) / 2);
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .grid__item {
     -ms-flex-preferred-size: calc((100% - 60px) / 3);
         flex-basis: calc((100% - 60px) / 3);
