@@ -3,7 +3,7 @@
         margin: 0 0 0 61px;
     }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
     margin: 0 70px 0 0;
     }
 }
@@ -21,7 +21,7 @@
 
 .connection__item:not(:last-child) {
     margin-bottom: 8px;
-    @media screen and (min-width: 1600) {
+    @media screen and (min-width: 1200) {
         margin-bottom: 9px;
     }
     
@@ -45,7 +45,7 @@
 @media screen and (max-width: 767px) {
     margin: 60px 0;
     }
-@media screen and (min-width: 768px) and (max-width: 1599px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
     margin:0 0 0 165px;
     }
  }
@@ -72,11 +72,11 @@
     // margin-left: auto;
     display: flex;
     flex-direction: column;
-    @media screen and (min-width: 768px) and (max-width: 1599px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         margin: 60px auto 0 141px;
         }
     
-    @media screen and (min-width: 1600px){
+    @media screen and (min-width: 1200px){
         margin: 0 0 0 93px;
         }
     
@@ -88,7 +88,7 @@
         height: 120px;
         justify-content: space-between;
 
-        @media screen and (min-width: 1600px) {
+        @media screen and (min-width: 1200px) {
             flex-direction: row;
         }
     }
@@ -113,7 +113,7 @@
                 width: 450px;
             }
 
-        @media screen and (min-width: 1600px) {
+        @media screen and (min-width: 1200px) {
         width: 358px;  
         margin-right: 12px;
         }

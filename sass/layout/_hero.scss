@@ -11,7 +11,7 @@
     &__container {
         padding: 118px 0;
 
-        @media screen and (min-width: 1600px) {
+        @media screen and (min-width: 1200px) {
             padding: 200px 0;
         }
     }
@@ -33,14 +33,14 @@
       background-image: url(../images/hero-1536.jpg);
   }
 
-    @media screen and (min-width: 1600px) {
-      background-image: linear-gradient($gradColor, $gradColor), url(../images/hero-1600.jpg);
-      background-size: 1600px 600px;
+    @media screen and (min-width: 1200px) {
+      background-image: linear-gradient($gradColor, $gradColor), url(../images/hero-1200.jpg);
+      background-size: 1200px 600px;
   }
 
-    @media screen and (min-device-pixel-ratio: 2) and (min-width: 1600px),
-  screen and (min-resolution: 192dpi) and (min-width: 1600px),
-  screen and (min-resolution: 2dppx) and (min-width: 1600px) {
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
       background-image: url(../images/hero-3200.jpg);
   }
 }
